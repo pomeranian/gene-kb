@@ -1,0 +1,10 @@
+﻿<template name='users'>
+    <h2>Users ({{userCount}})</h2>
+    <ul>
+      {{#each this}}
+      <li>
+        <a href="{{ pathFor }}"> {{username}} </a>
+      </li>
+      {{/each}}
+    </ul>
+</template>
