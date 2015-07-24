@@ -1,3 +1,5 @@
+Markers = new Mongo.Collection("markers");
+
 if (Meteor.isClient) {
 
 	// Meteor.subscribe("users");
@@ -12,6 +14,8 @@ if (Meteor.isClient) {
 		// forbidClientAccountCreation: true,
     passwordSignupFields: "USERNAME_AND_EMAIL"
   });
+  
+  Meteor.subscribe("markers");
 }
 
 /*******
@@ -44,4 +48,6 @@ if (Meteor.isServer) {
   	return Roles.find({})
   })
 	*/
+	
+	Meteor.publish("markers");
 }

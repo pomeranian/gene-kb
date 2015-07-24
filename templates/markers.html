@@ -1,0 +1,32 @@
+<template name="markers">
+
+	<hr>
+	<h2>MARKERS</h2>
+    
+    <table id="s-agg" class="table table-hover table-striped">
+			
+			<thead>
+				<tr>
+					<th>Gene</th>
+					<th>SNP</th>
+					<th>Physiology</th>
+				</tr>
+			</thead>
+			
+			{{> contentFor template="markersRow"}}
+			<!-- {{#each getSum}}
+				{{> summaryRow}} 
+			{{/each}} -->
+
+			<tfoot>
+        <tr>
+			<th>Gene</th>
+			<th>SNP</th>
+			<th>Physiology</th>
+        </tr>
+			</tfoot>
+				
+		</table> 
+		
+</template>
+</template>
